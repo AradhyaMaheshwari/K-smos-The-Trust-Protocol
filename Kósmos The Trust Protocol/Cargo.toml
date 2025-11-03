@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "contracts/did_registry",
+    "contracts/issuer_whitelist",
+    "contracts/zkp_verifier",
+]
+
+[workspace.dependencies]
+soroban-sdk = { version = "20.3.0" }

@@ -1,0 +1,17 @@
+[package]
+name = "zkp-verifier"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+# NOTE: You will need to add your specific ZKP library dependency here
+# e.g., groth16_verifier = { ... }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+issuer-whitelist = { path = "../issuer_whitelist" }
